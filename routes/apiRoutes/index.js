@@ -2,8 +2,6 @@ const path = require('path');
 const fs = require('fs')
 const allNotes = require('../../db/db.json');
 
-var uniqid = require('uniqid');
-
 function createNewNote(body, notesArray) {
   const newNote = body;
   if (!Array.isArray(notesArray))
